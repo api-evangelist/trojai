@@ -1,0 +1,21 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.troj.ai/reference/eng-api
+versioning:
+  api_scheme: uri-path
+  api_current: v2
+  product_scheme: semver
+  product_current: 2.17.0
+  docs: https://docs.troj.ai/reference/eng-release-notes
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: >-
+    No formal RFC 8594 Deprecation/Sunset header policy published. Release notes
+    do announce removed rules and breaking changes (e.g. v2.17.0 retired the
+    Source Code detection and PII Monitor with Context rules and invalidated
+    existing API keys after the Keycloak 26 upgrade).
+sla:
+  url: null
+status_page: null
+deprecated_operations: []

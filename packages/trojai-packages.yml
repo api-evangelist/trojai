@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/pypi/trojai-sdk/json
+packages:
+  - language: python
+    registry: pypi
+    name: trojai-sdk
+    import: troj
+    url: https://pypi.org/project/trojai-sdk/
+    install: pip install trojai-sdk
+    version: 0.2.4.3
+    official: true
+    homepage: https://troj.ai
+    description: >-
+      The troj Python convenience package to integrate TrojAI adversarial
+      protections and robustness metrics into AI development pipelines
+      (the TrojAI SDK used to submit evaluation runs to the platform).
+    docs: https://docs.troj.ai/trojai/how-to-guides/evaluation-configuration-guide/trojai-sdk

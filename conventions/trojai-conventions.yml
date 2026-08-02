@@ -1,0 +1,45 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.troj.ai/reference/eng-api
+docs: https://docs.troj.ai/reference/eng-api
+authentication:
+  style: api-key-header
+  platform_header: x-trojai-api-key
+  proxy_header: x-eag-clientid
+  bearer_prefix: false
+  see: authentication/trojai-authentication.yml
+versioning:
+  style: uri-path
+  current: v2
+  base_path: /api/v2
+  swagger_ui: https://<your_trojai_host>/docs
+rate_limiting:
+  supported: true
+  scope: >-
+    TrojAI Defend supports configurable request rate limiting to protect
+    downstream AI services from excessive traffic (added v2.17.0). This is a
+    firewall-policy control on proxied traffic rather than a documented
+    per-tenant platform-API quota with standard RateLimit response headers.
+  docs: https://docs.troj.ai/trojai-defend/eng-rate-limiting
+idempotency:
+  supported: false
+  notes: No documented idempotency-key header or contract for the platform API.
+event_correlation:
+  supported: true
+  notes: >-
+    Defend guardrail endpoints (validateText, validateParsedText) can link a
+    request and its response into a single event by passing the input call's
+    event TRN (TrojAI Resource Name) on the follow-up output call.
+  docs: https://docs.troj.ai/trojai-defend/eng-proxy-api
+resource_naming:
+  scheme: TRN
+  notes: TrojAI Resource Name (TRN) identifiers correlate events and resources.
+error_envelope:
+  notes: >-
+    Platform API is a RESTful JSON API with a Swagger UI on the tenant host;
+    the OpenAPI/error schema is served per-deployment and not published at a
+    single public URL.
+cross_links:
+  authentication: authentication/trojai-authentication.yml
+  lifecycle: lifecycle/trojai-lifecycle.yml
+  changelog: changelog/trojai-changelog.yml

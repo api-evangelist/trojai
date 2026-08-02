@@ -1,20 +1,73 @@
 aid: trojai
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/trojai.png
 name: TrojAI
-description: TrojAI is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  TrojAI is an enterprise AI security platform (acquired by A10 Networks) that lets
+  organizations deploy AI models and agents safely. Its two products — TrojAI Detect
+  (generative-AI red teaming, model robustness stress-testing, and integrity/risk
+  audits for tabular and NLP models) and TrojAI Defend (a runtime firewall / proxy
+  that inspects prompts and tool calls for prompt injection, jailbreaks, data leakage,
+  toxic content, and rogue MCP/tool abuse) — are managed through a self-hosted RESTful
+  platform API (/api/v2, authenticated with the x-trojai-api-key header), a Firewall
+  Proxy API, a Python SDK (trojai-sdk), and a Keycloak-backed web application. It
+  deploys as Cloud or Enterprise (Helm/Kubernetes).
 url: https://raw.githubusercontent.com/api-evangelist/trojai/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - techstars
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enriched-real-api-surface
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
-apis: []
+- AI Security
+- Machine Learning
+- LLM Security
+- Red Teaming
+- AI Firewall
+- Prompt Injection
+- Model Risk
+- MLOps
+- Agentic AI
+apis:
+- name: TrojAI Platform API
+  description: >-
+    RESTful JSON API to manage the TrojAI platform programmatically (users, groups,
+    roles/permissions, datasets, models, firewall policies/configs, firewall events,
+    red team jobs and results, and secrets) — designed to be driven from an MLOps or
+    CI/CD pipeline. Authenticated with an API key in the x-trojai-api-key header. The
+    platform is self-hosted (Cloud or Enterprise), so the host is per-deployment and a
+    per-tenant Swagger UI is served at https://<your_trojai_host>/docs.
+  humanURL: https://docs.troj.ai/reference/eng-api
+  baseURL: https://your-trojai-host.example/api/v2
+  x-base-url-note: >-
+    Host is per-tenant (self-hosted Cloud/Enterprise). The documented base path is
+    /api/v2 on the deployment host (https://<your_trojai_host>); there is no single
+    public production host.
+  properties:
+  - type: APIReference
+    url: https://docs.troj.ai/reference/eng-api
+  - type: Documentation
+    url: https://docs.troj.ai/
+  - type: Authentication
+    url: authentication/trojai-authentication.yml
+  - type: Swagger
+    url: https://docs.troj.ai/reference/eng-api
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +76,46 @@ maintainers:
 common:
 - type: Website
   url: https://troj.ai/
+- type: DeveloperPortal
+  url: https://docs.troj.ai/
+- type: Documentation
+  url: https://docs.troj.ai/
+- type: APIReference
+  url: https://docs.troj.ai/reference/eng-api
+- type: GettingStarted
+  url: https://docs.troj.ai/trojai/getting-started/for-data-scientists
+- type: Blog
+  url: https://troj.ai/blog/
+- type: Support
+  url: https://troj.ai/company/contact/
+- type: PrivacyPolicy
+  url: https://troj.ai/legal/privacy-policy/
+- type: TermsOfService
+  url: https://troj.ai/legal/terms-of-service/
+- type: Security
+  url: https://troj.ai/legal/security/
+- type: LLMsTxt
+  url: llms/trojai-llms.txt
+- type: Authentication
+  url: authentication/trojai-authentication.yml
+- type: Packages
+  url: packages/trojai-packages.yml
+- type: SDKs
+  url: packages/trojai-packages.yml
+- type: ChangeLog
+  url: changelog/trojai-changelog.yml
+- type: Lifecycle
+  url: lifecycle/trojai-lifecycle.yml
+- type: Conventions
+  url: conventions/trojai-conventions.yml
+- type: Conformance
+  url: conformance/trojai-conformance.yml
+- type: DomainSecurity
+  url: security/trojai-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/trojai-vulnerability-disclosure.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 10
+  pass: local-v1

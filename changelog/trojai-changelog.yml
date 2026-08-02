@@ -1,0 +1,41 @@
+generated: '2026-07-21'
+method: searched
+source: https://docs.troj.ai/reference/eng-release-notes
+docs: https://docs.troj.ai/reference/eng-release-notes
+scheme: semver
+current_version: 2.17.0
+notes: >-
+  Product release notes for the TrojAI platform (Detect + Defend). The platform
+  API is versioned separately in the URI path as /api/v2. Recent window only;
+  the live release-notes page is the source of truth.
+entries:
+  - version: 2.17.0
+    date: '2026-06-18'
+    highlights:
+      - Defend request rate limiting
+      - Configurable event retention and compression (separate PASS/non-PASS retention)
+      - Guardrail status-code mapping and streaming (SSE) support for custom Detect targets
+      - Default MCP input handler; Earlybird secret detection rule
+      - Keycloak 26 upgrade (invalidates existing API keys), Vault cloud auto-unseal, CVE remediation
+      - OpenAI Integration Compliance Logs API upgraded to v2
+    breaking:
+      - Existing API keys are invalidated after the Keycloak 26 upgrade and must be recreated
+      - Source Code detection rule and PII Monitor with Context rule removed from the rule catalog
+  - version: 2.16.0
+    date: '2026-04-21'
+  - version: 2.15.0
+    date: '2026-03-25'
+  - version: 2.14.0
+    date: '2026-02-26'
+  - version: 2.13.0
+    date: '2026-01-09'
+  - version: 2.12.0
+    date: '2025-12-15'
+  - version: 2.11.0
+    date: '2025-11-25'
+  - version: 2.10.0
+    date: '2025-11-07'
+  - version: 2.9.0
+    date: '2025-10-29'
+  - version: 2.8.0
+    date: '2025-09-09'

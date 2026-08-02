@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+source: https://troj.ai/legal/security/
+standards:
+  - id: rest
+    conforms: true
+    evidence: Documented RESTful JSON API over /api/v2 with a Swagger UI.
+  - id: apikey-auth
+    conforms: true
+    evidence: Header API-key authentication (x-trojai-api-key).
+  - id: oauth2
+    conforms: false
+    evidence: No OAuth2 flows documented for the API; identity is Keycloak-backed for the web app.
+  - id: openid-connect
+    conforms: false
+    evidence: No public OIDC discovery document (/.well-known/openid-configuration returns non-200).
+  - id: rfc9457-problem-details
+    conforms: unknown
+    evidence: API error schema served per tenant; not verifiable from public docs.
+  - id: soc2-type2
+    conforms: false
+    status: in-progress
+    evidence: >-
+      troj.ai/legal/security states the company is in the process of completing
+      a SOC 2 Type 2 audit. Not published as a completed certification, so no
+      Compliance pointer is emitted.
+  - id: server-sent-events
+    conforms: true
+    evidence: Defend proxy and custom Detect targets support streaming (SSE) responses.

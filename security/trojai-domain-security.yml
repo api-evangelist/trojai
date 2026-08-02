@@ -1,0 +1,20 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: troj.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 30 20:36:13 2026 GMT
+  hsts: false
+domains:
+- domain: troj.ai
+  dnssec: true
+  caa:
+  - 0 issue "letsencrypt.org"
+  - 0 issue "pki.goog"
+  - 0 iodef "mailto:security@troj.ai"
+  - 0 issue "digicert.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine

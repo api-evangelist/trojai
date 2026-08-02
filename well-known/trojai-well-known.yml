@@ -1,0 +1,19 @@
+generated: '2026-07-21'
+method: searched
+host: https://troj.ai
+notes: >-
+  No /.well-known discovery surface published on the marketing host. The
+  platform API and its Swagger UI live on per-tenant self-hosted deployments
+  (https://<your_trojai_host>), which are not publicly probeable. Absence
+  recorded as valid data; no raw documents saved and no WellKnown pointer wired.
+documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 500
+  - path: /.well-known/oauth-authorization-server
+    status: 500
+  - path: /.well-known/api-catalog
+    status: 500
+  - path: /.well-known/ai-plugin.json
+    status: 500
