@@ -96,6 +96,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/a10-networks/
+  name: A10 Networks
+  x-relationship: acquired
+  x-evidence: "TrojAI is an enterprise AI security platform (acquired by A10 Networks) that lets organizations deploy AI models and agents safely."
 - type: Website
   url: https://troj.ai/
 - type: DeveloperPortal
