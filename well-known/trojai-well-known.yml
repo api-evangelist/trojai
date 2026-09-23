@@ -1,12 +1,12 @@
 generated: '2026-07-21'
 method: searched
 host: https://troj.ai
-notes: >-
-  No /.well-known discovery surface published on the marketing host. The
-  platform API and its Swagger UI live on per-tenant self-hosted deployments
-  (https://<your_trojai_host>), which are not publicly probeable. Absence
-  recorded as valid data; no raw documents saved and no WellKnown pointer wired.
-documents:
+notes: No /.well-known discovery surface published on the marketing host. The platform API and its Swagger
+  UI live on per-tenant self-hosted deployments (https://<your_trojai_host>), which are not publicly probeable.
+  Absence recorded as valid data; no raw documents saved and no WellKnown pointer wired.
+hosts:
+- host: https://troj.ai
+  documents:
   - path: /.well-known/security.txt
     status: 404
   - path: /.well-known/openid-configuration
@@ -17,3 +17,8 @@ documents:
     status: 500
   - path: /.well-known/ai-plugin.json
     status: 500
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.

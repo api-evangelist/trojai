@@ -1,0 +1,31 @@
+# Front Door AI Index — trojai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: trojai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: troj.ai
+  final_host: troj.ai
+  ownership: own
+  owner: trojai
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 55
+  host_score: 55
+  density: 78.12
+  words: 704
+  tiers:
+    agentic: 26
+    core: 29
+    model: 0
+  ambiguous: 27
+  top_terms:
+    AI: 29
+    agent: 27
+    agentic: 8
+    prompts: 8
+    MCP: 5
+    AI agent: 4
+    model context protocol: 1
