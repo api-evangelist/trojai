@@ -48,14 +48,14 @@ modified: '2026-07-21'
 tags:
 - Company
 - AI Security
-- Machine-Learning
+- Machine Learning
 - LLM Security
 - Red Teaming
 - AI Firewall
 - Prompt Injection
 - Model Risk
 - MLOps
-- Agentic AI
+- AI Agents
 tags_raw:
 - Company
 - AI Security
@@ -67,6 +67,7 @@ tags_raw:
 - Model Risk
 - MLOps
 - Agentic AI
+- Machine-Learning
 apis:
 - name: TrojAI Platform API
   description: >-
