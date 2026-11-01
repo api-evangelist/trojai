@@ -64,6 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-TrojAI is a company surfaced as a portfolio company of techstars and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+TrojAI is an enterprise AI security platform (acquired by A10 Networks) that lets organizations deploy AI models and agents safely. Its two products — TrojAI Detect (generative-AI red teaming, model robustness stress-testing, and integrity/risk audits for tabular and NLP models) and TrojAI Defend (a runtime firewall / proxy that inspects prompts and tool calls for prompt injection, jailbreaks, data leakage, toxic content, and rogue MCP/tool abuse) — are managed through a self-hosted RESTful platform API (/api/v2, authenticated with the x-trojai-api-key header), a Firewall Proxy API, a Python SDK (trojai-sdk), and a Keycloak-backed web application. It deploys as Cloud or Enterprise (Helm/Kubernetes).
 
-Backed by: techstars — https://troj.ai/
+**Areas:** Company · AI Security · Machine Learning · LLM Security · Red Teaming · AI Firewall · Prompt Injection · Model Risk · MLOps · AI Agents
+
+## TrojAI on APIs.io
+
+Everything profiled for TrojAI is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/trojai/](https://apis.io/providers/trojai/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [TrojAI Platform API](https://apis.io/apis/trojai/trojai-platform-api/) — RESTful JSON API to manage the TrojAI platform programmatically (users, groups, roles/permissions, datasets, models, firewall policies/configs, firewall…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (2)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Moved to /providers/trojai/](https://apis.io/servers/trojai/trojai/)
+- [Moved to /providers/trojai/](https://apis.io/servers/trojai/trojai-2/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Trojai Authentication](https://apis.io/security/trojai/trojai-authentication/)
+- [Trojai Domain Security](https://apis.io/security/trojai/trojai-domain-security/)
+- [Trojai Vulnerability Disclosure](https://apis.io/security/trojai/trojai-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://troj.ai/)
+- [Documentation](https://docs.troj.ai/)
+- [Getting started](https://docs.troj.ai/trojai/getting-started/for-data-scientists)
+- [API reference](https://docs.troj.ai/reference/eng-api)
+- [Support](https://troj.ai/company/contact/)
+- [Blog](https://troj.ai/blog/)
+- [Security](https://troj.ai/legal/security/)
+- [Terms of service](https://troj.ai/legal/terms-of-service/)
+- [Privacy policy](https://troj.ai/legal/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 38.1** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 24.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 64.3 |
+| Access clarity | 21.1 |
+
+**Agent readiness 27.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 28.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/trojai/](https://apis.io/providers/trojai/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for TrojAI: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/trojai/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
